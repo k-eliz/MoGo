@@ -167,11 +167,20 @@ h1,h2,h3,h4,h5,h6 {
 /*SLider*/
 
 .slider{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 80px;
+    width:100%;
+
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
 }
 
+.slider__inner{
+    display: flex;
+    justify-content: space-between;
+   
+}
 .slider__item{
     width: 23%;
     padding: 20px 0;
