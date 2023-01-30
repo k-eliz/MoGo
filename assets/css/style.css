@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .intro__title{
     color: #fff;
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -63,7 +63,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .intro__subtitle{
     margin-bottom: 20px;
-    font-size: 72px;
+    margin-top: 100px;
+    font-size: 58px;
     color: #fff;
     font-family: 'Kaushan Script', cursive;
 }
@@ -130,11 +131,15 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-.nav__link:hover:after{
+
+.nav__link:hover:after, .nav__link.active:after {
     display: block;
 
 }
 
+.nav__link.active {
+    color:#fce38a; 
+}
 /*Button*/
 
 .btn{
@@ -164,7 +169,7 @@ h1,h2,h3,h4,h5,h6 {
 .slider{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 .slider__item{
