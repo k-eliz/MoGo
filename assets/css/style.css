@@ -25,11 +25,36 @@ h1,h2,h3,h4,h5,h6 {
 /* Intro */
 
 .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width:100%;
     height: 100vh;
     background: url("../images/intro.jpg") center no-repeat;
     background-size: cover;
 
+}
+.intro__inner{
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+}
+.intro__title{
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+
+}
+
+.intro__suptitle{
+    font-size: 72px;
+    color: #fff;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
 }
 
 /*Header*/
@@ -73,7 +98,6 @@ h1,h2,h3,h4,h5,h6 {
     transition: color 0.2s linear;
 
 }
-
 .nav__link:after{
     content:"";
     display: block;
