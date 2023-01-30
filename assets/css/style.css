@@ -158,3 +158,49 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #fff;
     color: #ffcc99;
 }
+
+/*SLider*/
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.slider__item{
+    width: 23%;
+    padding: 20px 0;
+    position: relative;
+
+    border-top: 3px solid #fff;
+    opacity: .7;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.slider__item.active{
+    opacity: 1;
+}
+
+.slider__item.active::before{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+
+}
+
+.slider__num {
+    font-size: 24px;
+    font-weight: 700;
+}
