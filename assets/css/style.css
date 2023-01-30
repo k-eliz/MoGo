@@ -39,22 +39,33 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 880px;
     margin: 0 auto;
 
+    text-align: center;
+
 }
 .intro__title{
     color: #fff;
     font-size: 150px;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: center;
     line-height: 1;
 
 }
 
-.intro__suptitle{
+.intro__title:after{
+    content:"";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto ;
+
+    background-color: #fff;
+}
+
+.intro__subtitle{
+    margin-bottom: 20px;
     font-size: 72px;
     color: #fff;
     font-family: 'Kaushan Script', cursive;
-    text-align: center;
 }
 
 /*Header*/
@@ -122,4 +133,28 @@ h1,h2,h3,h4,h5,h6 {
 .nav__link:hover:after{
     display: block;
 
+}
+
+/*Button*/
+
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    transition: background .1s linear color .1s linear;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #ffcc99;
 }
