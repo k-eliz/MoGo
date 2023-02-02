@@ -338,3 +338,36 @@ h6 {
   font-size: 14px;
   text-transform: uppercase;
 }
+
+/* Services */
+
+.services{
+  display: flex;
+}
+
+.services__items{
+  flex: 1 1 0;
+
+  padding-left: 90px;
+  position: relative;
+}
+
+.services__icon{
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 1;
+}
+.services__title{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.services__text{
+  text-align: left;
+  font-size: 15px;
+  color: #999;
+}
