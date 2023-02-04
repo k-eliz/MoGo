@@ -226,6 +226,13 @@ hr {
   padding: 80px 0;
 }
 
+.section--devices {
+  padding-bottom: 0;
+  background: url("../images/devices-bg.jpg") center no-repeat;
+  background-size: cover;
+  
+}
+
 .section__header {
   width: 100%;
   max-width: 950px;
@@ -381,4 +388,25 @@ hr {
   text-align: left;
   font-size: 15px;
   color: #999;
+}
+
+
+/*Devices*/
+
+.devices{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.devices__item{
+  display: block;
+}
+
+.devices__item--iphone{
+  position: absolute;
+  bottom: -80px;
+  right: 0;
+  z-index: 1;
 }
