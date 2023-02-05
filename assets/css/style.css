@@ -227,6 +227,7 @@ hr {
 }
 
 .section--devices {
+  margin-bottom: 40px;
   padding-bottom: 0;
   background: url("../images/devices-bg.jpg") center no-repeat;
   background-size: cover;
@@ -409,4 +410,79 @@ hr {
   bottom: -80px;
   right: 0;
   z-index: 1;
+}
+
+/*We do*/
+
+.wedo{
+  display: flex;
+}
+
+.wedo__item{
+  width: 50%;
+}
+
+/*Accordion*/
+
+.accordion__item{
+  border: 1px solid #e5e5e5;
+}
+
+.accordion__item.active
+.accordion__content
+{
+  display: block;
+}
+
+.accordion__item.active
+.accordion__header:after{
+  transform: translateY(-50%);
+  rotate: -45deg;
+  margin-top: 5px;
+}
+
+.accordion__header{
+  padding: 15px 20px 15px 60px;
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion__header:after{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-top: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  z-index: 1;
+
+  transform: translateY(-50%);
+  rotate: 135deg;
+
+}
+
+.accordion__icon{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.accordion__content{
+  padding: 15px 20px;
+  display: none;
+  font-size: 15px;
+  color: #999;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.accordion__title{
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
 }
