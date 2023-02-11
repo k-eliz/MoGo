@@ -532,6 +532,7 @@ position: relative;
 .reviews__item {
   padding-left: 205px;
   position: relative;
+  padding-left: 255px;
 }
 
 .reviews__photo{
@@ -540,6 +541,7 @@ position: relative;
   left: 0;
   z-index: 1;
   border: 2px solid #95e1d3;
+  border-radius: 50%;
 }
 
 .reviews__text{
