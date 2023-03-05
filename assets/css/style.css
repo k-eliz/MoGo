@@ -461,12 +461,20 @@ hr {
 
 .wedo {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
 .wedo__item {
   width: 50%;
+  padding: 0 15px;
 }
 
+.wedo__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* Accordion */
 
 .accordion__item {
@@ -1179,6 +1187,16 @@ hr {
 
   .services__icon {
     left: 0;
+  }
+
+  /*We do*/
+
+  .wedo__img {
+    display: none;
+  }
+
+  .wedo__item {
+    width: 100%;
   }
 }
 
