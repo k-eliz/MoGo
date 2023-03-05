@@ -370,6 +370,7 @@ hr {
 
 .stat {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .stat__item {
@@ -1087,6 +1088,24 @@ hr {
   .intro__title {
     font-size: 60px;
   }
+
+  /* Stat */
+
+  .stat {
+    justify-content: center;
+  }
+
+  .stat__item {
+    flex: none;
+    width: 33.33333%;
+    border: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .stat__item:last-child {
+    border-right: 0;
+  }
 }
 
 @media (max-width: 770px) {
@@ -1153,5 +1172,19 @@ hr {
 
   .section__header {
     margin-bottom: 50px;
+  }
+
+  /*Stat*/
+  .stat__item {
+    width: 100%;
+    border-bottom: 1px solid #b5eae0;
+  }
+
+  .stat__item:last-child {
+    border-bottom: 0;
+  }
+
+  .stat__count {
+    font-size: 52px;
   }
 }
