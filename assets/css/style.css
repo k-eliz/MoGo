@@ -791,6 +791,7 @@ hr {
 .blog {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .blog__item {
@@ -1265,6 +1266,20 @@ hr {
   .works__col {
     flex: none;
     width: 50%;
+  }
+
+  /*Blog*/
+  .blog {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .blog__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .blog__item :last-child {
+    margin-bottom: 0;
   }
 }
 
