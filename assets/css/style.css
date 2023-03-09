@@ -1245,6 +1245,14 @@ hr {
   .reviews__author {
     font-size: 20px;
   }
+  /*Works*/
+  .works {
+    flex-wrap: wrap;
+  }
+  .works__col {
+    flex: none;
+    width: 50%;
+  }
 }
 
 @media (max-width: 575px) {
@@ -1322,5 +1330,14 @@ hr {
 
   .logos__img {
     margin: 0 auto;
+  }
+
+  /*Works*/
+  .works {
+    flex-wrap: wrap;
+  }
+  .works__col {
+    flex: none;
+    width: 100%;
   }
 }
