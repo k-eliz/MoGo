@@ -20,6 +20,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 /*Container*/
 .container {
   width: 100%;
@@ -37,6 +38,10 @@ hr {
   background-color: #e5e5e5;
 }
 
+.page {
+  overflow: hidden;
+}
+
 /* Intro */
 
 .intro {
@@ -45,8 +50,10 @@ hr {
   justify-content: center;
   width: 100%;
   height: 100vh;
+  min-height: 820px;
   background: url("../images/intro.jpg") center no-repeat;
   background-size: cover;
+  position: relative;
 }
 .intro__inner {
   width: 100%;
@@ -905,9 +912,15 @@ hr {
   background-color: #f8f8f8;
 }
 
+.footer__col {
+  padding: 0 15px;
+}
+
 .footer__inner {
   padding-bottom: 65px;
   display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
   justify-content: space-between;
 }
 
@@ -923,7 +936,7 @@ hr {
   width: 22%;
 }
 
-.footer_logo {
+.footer__logo {
   font-size: 45px;
   font-weight: 700;
   color: #ccc;
@@ -1022,12 +1035,14 @@ hr {
 }
 
 .posts__item {
-  width: 32.333333%;
+  width: 33%;
   border-bottom: 1px solid #fff;
 }
 
 .posts__item img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*Subscribe*/
@@ -1175,12 +1190,37 @@ hr {
   .clients__item:last-child {
     margin-bottom: 0;
   }
+
+  /*Footer*/
+  .footer__col--first {
+    width: 100%;
+  }
+  .footer__col--second,
+  .footer__col--third {
+    width: 50%;
+  }
+
+  /*Posts*/
+
+  .posts {
+    justify-content: flex-start;
+  }
+
+  .posts__item {
+    width: auto;
+    border-right: 1px solid white;
+  }
 }
 
 @media (max-width: 770px) {
   /*Nav*/
   .nav {
     display: none;
+  }
+  /*Intro*/
+
+  .intro {
+    min-height: 650px;
   }
 
   /*Section*/
@@ -1281,11 +1321,16 @@ hr {
   .blog__item :last-child {
     margin-bottom: 0;
   }
+
+  /*Footer*/
+
+  .footer__col--second,
+  .footer__col--third {
+    width: 100%;
+  }
 }
 
 @media (max-width: 575px) {
-  /*Intro*/
-
   .intro__subtitle {
     font-size: 22px;
   }
@@ -1380,5 +1425,32 @@ hr {
   }
   .clients__text:before {
     margin: 15px auto;
+  }
+
+  /*Blogs*/
+
+  .blogs__img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .blogs__title {
+    font-size: 10px;
+  }
+
+  /*Subscribe*/
+  .subscribe {
+    flex-wrap: wrap;
+    max-width: none;
+  }
+
+  .subscribe__input {
+    margin-bottom: 10px;
+    border-right: 1px solid #e7e7e7;
+  }
+
+  .subscribe__input,
+  .subscribe__btn {
+    width: 100%;
   }
 }
